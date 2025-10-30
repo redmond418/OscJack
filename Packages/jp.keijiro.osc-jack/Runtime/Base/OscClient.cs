@@ -125,7 +125,7 @@ namespace OscJack
         {
             _encoder.Clear();
             _encoder.Append(address);
-            _encoder.Append(",ii");
+            _encoder.Append(",if");
             _encoder.Append(element1);
             _encoder.Append(element2);
             _socket.Send(_encoder.Buffer, _encoder.Length, SocketFlags.None);
